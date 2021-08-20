@@ -43,9 +43,10 @@
         .firstParagraph{
             display: none;
         }
-        .myHeading{
-            color: brown;
+        .red{
+            background-color: rgb(255, 0, 0);
         }
+
     </style>
 </head>
 <body>
@@ -285,6 +286,14 @@
 
     console.log("--------37) Write a function to add a red background to every link in the page-------------")
 
+    const addRedToLink = function (){
+        for(let node of document.getElementsByTagName("a")){
+            document.getElementsByTagName("a")
+            node.classList.add("red")
+        }
+
+
+    }
 
     console.log("----------38) Console log Page loaded when the page is correctly loaded--------------------")
    
@@ -293,6 +302,14 @@
     }
 
     console.log("--------39) Write a function to add new items to a UL-------------")
+
+    const addNewItemToUl = function (content) {
+          
+          const extraRow = document.querySelector("ul")
+          let myList = document.createElement("li")
+          myList.innerText = "A new item to list"
+          document.querySelector("ul").append(myList)
+        };
 
 
     console.log("--------40) Write a function to empty a list-------------")

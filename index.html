@@ -46,6 +46,9 @@
         .red{
             background-color: rgb(255, 0, 0);
         }
+        .empty{
+            display: none;
+        }
 
     </style>
 </head>
@@ -315,7 +318,14 @@
     console.log("--------40) Write a function to empty a list-------------")
 
 
+    const emptyList = function (){
+        for(let node of document.getElementsByTagName("ul")){
+            document.getElementsByTagName("li")
+            node.classList.add("empty")
+        }
 
+
+    }
    
 
 </script>

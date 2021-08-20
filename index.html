@@ -201,6 +201,30 @@
     longestOne()
     console.log("---Could be better-------------------------------------------------------------")
 
+    array = [1,2,3]
+    array1 = [2,3,4]
+
+    const higherSum = function(){
+        let x = 0
+        let y = 0
+        for (let i = 0; i < array.length; i++) {
+           x += array[i] 
+        }
+        for (let i = 0; i < array1.length; i++) {
+            y+= array1[i]
+        }
+        if(x>y){
+            console.log(`${array} has a bigger sum than ${array1} and the sum is ${x}`)
+        }else{
+            console.log(`${array1} has a bigger sum than ${array} and the sum is ${y}`)
+        }   
+    }
+    higherSum()
+    console.log("---Could be better-------------------------------------------------------------")
+
+
+
+
 
 </script>
 
@@ -211,14 +235,6 @@
 
 
 <!--
-
-
-        JS EXERCISES
-        
-        
-        
-        29) Create a function that gets 2 arrays and returns the longest one
-        30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
 
         DOM 
 

@@ -43,6 +43,9 @@
         .firstParagraph{
             display: none;
         }
+        .myHeading{
+            color: brown;
+        }
     </style>
 </head>
 <body>
@@ -223,10 +226,36 @@
     console.log("---Could be better-------------------------------------------------------------")
 
     const getIdContainer = function(){
-
+        let x = document.querySelector("#container")
     }
 
+    console.log("--------------------Get every td from the page---------------------------------")
 
+    /* const getEveryTd = function (){
+        
+
+    } */
+
+    console.log("------------------- Create a cycle that prints the text inside every td of the page----------------------------")
+
+    /* const getEveryTd = function (){
+        
+
+    } */
+
+    console.log("-----------------Write a function to change the heading of the page-----------------------------")
+
+        
+        const changeHeading = function (newTitle) {
+          
+          const title = document.querySelector("h1")
+          title.innerHTML = "New title"
+        }
+
+    console.log("-------------------------------------")
+    window.onload = function() {
+        console.log("Page loaded")
+    }
 
 </script>
 
@@ -238,11 +267,12 @@
 
 <!--
 
-        DOM 
+        
 
-        31) Get element with ID "container" from the page
-        32) Get every "td" from the page
-        33) Create a cycle that prints the text inside every td of the page
+        
+  
+        
+
         34) Write a function to change the heading of the page
         35) Write a function to add an extra row to the table
         36) Write a function to add the class "test" to each row in the table

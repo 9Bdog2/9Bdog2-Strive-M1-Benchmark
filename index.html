@@ -7,8 +7,8 @@
     <title>Bogdan's Benchmark</title>
     <style>
         body{
-            width: max-content;
-            margin: auto;
+            width: 768px;
+            margin: 0 auto;
             border: 3px solid #000000;
         }
         h1{
@@ -18,7 +18,7 @@
             background: black;
         }
         p{
-            margin-top: 10px;
+            margin-top: 60px;
         }
         table, th  {
           border: 4px solid black;
@@ -157,19 +157,19 @@
     console.log(array1)
     console.log("--------------------------------------------------------------------------")
 
-    const minMax = function() {
-        let x = 1
-        let y = 1
-        for (let i = 0; i < array1.length; i++) {
-            if(array1[i] > x){
+    const minMax = function(array) {
+        let x = array[0]
+        let y = array[0]
+        for (let i = 0; i < array.length; i++) {
+            if(array[i] > x)
                 x = array1[i]
-            }else if(array1[i] < y){
+            if(array[i] < y)
                 y = array1[i]
-            }
+            
         }
         console.log(`The lowest number is ${x} and the highest number is ${y}`)
     }
-    minMax()
+    minMax(array1)
     console.log("--------------------------------------------------------------------------")
 
 

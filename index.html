@@ -56,6 +56,12 @@
     <h1>Bogdan's Benchmark</h1>
     <hr>
 
+    <div>
+    </div>
+
+    
+
+    <hr>
     <ol>
         <li>One</li>
         <li>Two</li>
@@ -329,6 +335,28 @@
    
     console.log("--------41) Add an eventListener to alert when the mouse is over a link, displaying the URL-------------")
 
+
+
+    console.log("--------49) Write a function to add a table with 4 rows and 3 columns programmatically-------------")
+
+    const container = document.querySelector('div')
+    const table = document.createElement('table')
+
+    for (let r = 0; r < 4; r++) {
+        const row = document.createElement("tr")
+
+        for (let col = 0; col < 3; col++) {
+            const cell = document.createElement("td")
+
+            cell.innerHTML = `${r}, ${col}`
+            row.appendChild(cell)
+            
+        }
+        table.appendChild(row)
+        
+    }
+
+    container.appendChild(table)
 
 </script>
 
